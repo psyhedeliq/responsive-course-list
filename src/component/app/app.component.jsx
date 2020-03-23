@@ -1,71 +1,14 @@
 import React from 'react';
 import { Header } from '../header';
+import { Welcome } from '../welcome';
+import { StyledCourseListApp } from './app.style';
 
 const CourseListApp = () => {
   return (
-    <div>
+    <StyledCourseListApp>
       <Header />
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-      <p>Ahoy, ahoy copii si frati! Dati din coate, nu mai stati! :D</p>
-    </div>
+      <Welcome />
+    </StyledCourseListApp>
   );
 };
 
