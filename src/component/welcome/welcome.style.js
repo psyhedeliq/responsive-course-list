@@ -9,6 +9,7 @@ export const StyledWelcome = styled.div`
     ),
     url(${styledWelcomeBackground});
   background-position: center;
+  background-size: cover;
   padding: 3px 16px 37px;
 `;
 

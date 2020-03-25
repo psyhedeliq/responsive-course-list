@@ -4,6 +4,7 @@ import {
   StyledWelcomeTitle,
   StyledWelcomeDescription
 } from './welcome.style';
+import { Button } from '../button';
 
 const Welcome = () => {
   return (
@@ -13,6 +14,7 @@ const Welcome = () => {
         Nam velit libero, ornare ac neque vitae, elementum lobortis justo.
         Vestibulum non finibus dolor.
       </StyledWelcomeDescription>
+      <Button>Call to action</Button>
     </StyledWelcome>
   );
 };
