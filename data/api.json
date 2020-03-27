@@ -1,5 +1,5 @@
 {
-  "courseList": [
+  "course-list": [
     {
       "title": "Crime Risk New",
       "description": "Donec a sodales lorem. Curabitur at nulla nec sem volutpat accumsan placerat nec elit. Ut bibendum dui vitae purus fringilla rhoncus. Praesent volutpat felis vitae felis ultricies rhoncus. Nulla maximus nibh vel enim ullamcorper aliquam. Nam efficitur est nibh, id mollis nisl ullamcorper et.",
@@ -233,7 +233,7 @@
       "price": 75
     }
   ],
-  "linkList": [
+  "link-list": [
     {
       "link": "http://retrack.ro"
     },
