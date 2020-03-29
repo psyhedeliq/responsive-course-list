@@ -1,25 +1,34 @@
 import styled from 'styled-components';
 
-const getCategory = category => {
+const getStyle = (category, property) => {
   const categoryList = {
-    primary: '#00aeef',
-    outline: 'transparent'
+    background: {
+      primary: '#00aeef',
+      outline: 'transparent',
+      secondary: 'white'
+    },
+    color: {
+      primary: 'white',
+      outline: '#00aeef',
+      secondary: 'black'
+    }
   };
 
-  if (categoryList.hasOwnProperty(category)) {
-    return categoryList[category];
+  if (categoryList[property].hasOwnProperty(category)) {
+    return categoryList[property][category];
   }
-  return categoryList.primary;
+  return categoryList[property].primary;
 };
 
 export const StyledLinkButton = styled.a`
-  background-color: ${({ category }) => getCategory(category)};
+  background: ${({ category }) => getStyle(category, 'background')};
+  color: ${({ category }) => getStyle(category, 'color')};
   font-size: 15px;
   line-height: 42px;
   height: 42px;
-  color: white;
   text-decoration: none;
   display: inline-block;
-  padding: 0 20px;
+  padding: 0 10px;
   border-radius: 4px;
+  ${({ selected }) => (selected ? 'border-bottom: 4px solid #00AEEF' : '')}
 `;

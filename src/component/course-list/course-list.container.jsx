@@ -1,10 +1,12 @@
 import React, { useReducer, useEffect } from 'react';
 import axios from 'axios';
+import { CourseList } from './course-list.component';
 
 const courseDataInitial = {
   filter: {
     filterList: [],
-    loading: false
+    loading: false,
+    selected: 0
   },
   course: {
     courseList: [],
@@ -14,13 +16,23 @@ const courseDataInitial = {
 
 // reducer
 const courseListReducer = (state = courseDataInitial, action) => {
+  console.log(action);
   switch (action.type) {
+    case 'UPDATE_FILTER':
+      return {
+        ...state,
+        filter: {
+          ...state.filter,
+          selected: action.selected
+        }
+      };
     case 'INIT_FILTER_LIST':
       return {
         ...state,
         filter: {
           loading: false,
-          filterList: action.filterList
+          filterList: action.filterList,
+          selected: 0
         }
       };
     case 'INIT_COURSE_LIST':
@@ -46,12 +58,21 @@ const initFilterListAction = filterList => ({
   filterList
 });
 
+const updateFilterAction = selected => ({
+  type: 'UPDATE_FILTER',
+  selected
+});
+
 const CourseListContainer = () => {
   const [courseData, updateCourseData /* aka dispatch */] = useReducer(
     courseListReducer,
     courseDataInitial
   );
   console.log(courseData);
+
+  const handleFilter = selected => {
+    updateCourseData(updateFilterAction(selected));
+  };
 
   useEffect(() => {
     (async () => {
@@ -60,7 +81,10 @@ const CourseListContainer = () => {
         // console.log(response);
         const { data } = await axios.get('http://localhost:4444/course-list');
         // console.log(data);
-        const filterList = [...new Set(data.map(({ type }) => type))];
+        const filterList = [
+          'all courses',
+          ...new Set(data.map(({ type }) => type))
+        ];
         // console.log(filterList);
         // dispatch
         updateCourseData(initFilterListAction(filterList));
@@ -71,25 +95,7 @@ const CourseListContainer = () => {
     })();
   }, []);
 
-  return (
-    <div>
-      <h1>Course List</h1>
-      <div>
-        {courseData.filter.loading ? (
-          <div>Waiting for filters ...</div>
-        ) : (
-          courseData.filter.filterList.map(filter => <div>{filter}</div>)
-        )}
-      </div>
-      <div>
-        {courseData.course.loading ? (
-          <div>Loading courses ...</div>
-        ) : (
-          courseData.course.courseList.map(course => <div>{course.title}</div>)
-        )}
-      </div>
-    </div>
-  );
+  return <CourseList handleFilter={handleFilter} courseData={courseData} />;
 };
 
 export { CourseListContainer };
